@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #1f1f1f;
+    font-family: poppins;
+    color: navajowhite;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+body.active main
+{
+    background-color: #ece6e6;
+    color: #000000;
+}
+
+body.active
+{
+    background-color: #ece6e6;
+}
+
+
+
+#toogle
+{
+
+    position: relative;
+    display: block;
+    margin-left: 20%;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background: #222;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 4px rgba(0,0,0,0.1);
+
+}
+#toogle.active
+{
+    background: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0,1),
+                inset 0 2px 8px rgba(0, 0, 0, 0,1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0,05),
+
+}
+#toogle .indicator
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#toogle.active .indicator {
+    left: 30px;
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1),
+      inset 0 4px 4px rgba(255, 255, 255, 1),
+      inset 0 -4px 4px rgba(255, 255, 255, 1);
+  }
+
+
+main{
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 8%;
+    flex:1;
+}
+
+header{
+    min-height:50px;
+    font-weight: bold;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #111111;
+    display: block;
+    position: fixed;
+}
+
+
+
+body.active nav {
+    background-color:  navajowhite;
+}
+.sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: #111111;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+
+  body.active .sidebar {
+    background-color:  navajowhite;
+  }
+.sidebar a {
+    display: block;
+    color: navajowhite;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px  0  10px 22px;
+  }
+
+  body.active .sidebar a{
+    color: #000000;
+}
+
+
+  .sidebar a:hover{
+    color: white;
+  }
+  body.active .sidebar a:hover{
+    color: white;
+  }
+
+
+
+
+.menubar{
+    color: navajowhite;
+    display: block;
+    float: left;
+    line-height: 70px;
+    font-size: 33px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.category{
+    display: flex;
+
+}
+.pages {
+    display: flex;
+    gap: 20%;
+    width: 100%;
+    align-items: center;
+  }
+
+  body.active .pages a{
+    color: rgb(0, 0, 0);
+}
+
+.pages a{
+    color: navajowhite;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.pages a:hover{
+    color: white;
+}
+
+body.active .pages a:hover{
+    color: white;
+}
+
+
+
+body.active .menubar{
+    color: #000000;
+}
+.titlecard {
+    line-height: 70px;
+    padding-left: 20px;
+    text-align: left;
+    color: navajowhite;
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    margin-top: 70px;
+}
+
+h1,h2{
+    color: navajowhite;
+}
+
+body.active h2{
+    color: #000000;
+}
+
+body.active h1{
+    color: #000000;
+}
+
+p{
+    color: white;
+}
+
+body.active p {
+    color: rgb(0, 0, 0);
+}
+
+body.active .herocard{
+    background-color: #fff;
+}
+
+
+hr {
+    margin: auto;
+    height: 3px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: navajowhite;
+}
+
+body.active hr{
+    background-color: black;
+}
+
+footer{
+    min-height:50px;
+    background-color: #111111;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+body.active footer{
+    background-color: navajowhite;
+}
+.creator{
+    padding-top: 10px;
+}
+
+body.active h3{
+    color: black;
+}
+
+body.active h4{
+    color: black;
+}
+
+body.active p{
+    color: black;
+}
+.creator-body{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.creator-card{
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: ce;
+}
+
+body.active .creator-card{
+    background-color: navajowhite;
+}
+
+

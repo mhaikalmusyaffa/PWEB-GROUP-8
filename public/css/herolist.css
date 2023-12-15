@@ -1,0 +1,104 @@
+
+.titles{
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.hero-card{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    justify-content: space-between;
+    gap: 20px;
+    border: navajowhite solid 1px;
+    box-shadow: 1px 2px 5px navajowhite;
+    cursor: pointer;
+}
+.hero-card:hover{
+    background-color: #333; /* Dark gray or any other color you prefer */
+    transition: background-color 0.3s ease;
+
+}
+
+
+body.active .hero-card{
+    background-color: #fff;
+    border: black solid 1px;
+    box-shadow: 1px 2px 5px black;
+}
+
+
+body.active .hero-card:hover{
+    background-color: rgb(233, 233, 233);
+    transition: background-color 0.3s ease;
+
+}
+
+.hero-card a{
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+    color: navajowhite;
+}
+
+body.active .hero-card a{
+    color:black;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input{
+    display: inline-block;
+    border: 2px solid navajowhite;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background-color: white;
+
+}
+
+input:focus{
+    outline: none;
+    background-color:  rgb(223, 223, 223);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+body.active input{
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+

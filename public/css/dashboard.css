@@ -1,0 +1,141 @@
+
+.btn {
+    background-color: #00c921;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  body.active .btn{
+    background-color: #fff;
+    color: black;
+  }
+
+.add{
+    background-color: #242424;
+    color:navajowhite;
+    border: 2px solid #00c921;
+}
+
+.add:hover {
+    background-color: #00c921;
+    color: white;
+    transition: all 0.1s;
+  }
+
+  body.active .add{
+    background-color: #00c921;
+    color:white;
+    border: 2px solid #242424;
+}
+
+body.active .add:hover{
+    background-color: #242424;
+    color: white;
+    transition: all 0.1s;
+}
+.edit{
+    background-color: #242424;
+    color: navajowhite;
+    border: 2px solid #d0e700;
+}
+
+.edit:hover {
+    background-color: #d0e700;
+    color: white;
+    transition: all 0.1s;
+  }
+
+  body.active .edit{
+    background-color: #d0e700;
+    color:white;
+    border: 2px solid #242424;
+}
+
+body.active .edit:hover{
+    background-color: #242424;
+    color: white;
+    transition: all 0.1s;
+}
+
+.delete{
+    background-color: #242424;
+    color: navajowhite;
+    border: 2px solid #cf0000;
+}
+
+.delete:hover {
+    background-color: #cf0000;
+    color: white;
+    transition: all 0.1s;
+  }
+
+
+  body.active .delete{
+    background-color: #cf0000;
+    color:white;
+    border: 2px solid #242424;
+}
+
+body.active .delete:hover{
+    background-color: #242424;
+    color: white;
+    transition: all 0.1s;
+}
+
+
+  table, td, th {
+    border: 1px solid navajowhite;
+
+  }
+
+  body.active th{
+    border: 1px solid black
+  }
+  body.active td{
+    border: 1px solid black
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #111111;
+  }
+
+  body.active table{
+    background-color: white;
+  }
+
+  th{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: navajowhite;
+    color: rgb(0, 0, 0);
+  }
+
+  .hundo{
+    width: 100%;
+  }
+
+.alert{
+    width: 98%;
+    color: white;
+    padding-left: 25px;
+    height: 50px;
+    background-color: #00c921;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

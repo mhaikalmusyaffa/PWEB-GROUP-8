@@ -1,0 +1,101 @@
+main{
+    padding-top: 5%;
+}
+.titles{
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+img{
+    margin-top: 20px;
+}
+
+.hero-card{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    justify-content: space-between;
+    gap: 20px;
+    border: navajowhite solid 1px;
+    box-shadow: 1px 2px 5px navajowhite;
+}
+
+body.active .hero-card{
+    background-color: #fff;
+    border: black solid 1px;
+    box-shadow: 1px 2px 5px black;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+.overview{
+    padding-right: 8%;
+    padding-left: 8%;
+    margin-top: 10px;
+}
+table, td, th {
+    border: 1px solid navajowhite;
+
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  body.active th{
+    border: 1px solid black
+  }
+  body.active td{
+    border: 1px solid black
+  }
+
+  body.active table{
+    background-color: white;
+  }
+  th{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: navajowhite;
+    color: rgb(0, 0, 0);
+  }
+
+  td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  h2{
+    margin-top: 10px;
+  }
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.red{
+    color: red;
+}

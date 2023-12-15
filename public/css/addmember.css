@@ -1,0 +1,106 @@
+body{
+    background-color: #242424;
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    font-family: sans-serif;
+
+}
+
+.card{
+    color: black;
+    background-color: white;
+    width: 300px;
+    flex-direction: column;
+    border:1px solid navajowhite;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+.sbmt{
+    background-color: #242424;
+    border: solid 1px navajowhite;
+    color: navajowhite;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.inpt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-left:5px solid #00c921;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+h2{
+    margin: 0;
+}
+
+.firm{
+    background-color: #242424;
+    color:navajowhite;
+    border: 2px solid #00c921;
+}
+
+.firm:hover{
+    background-color: #00c921;
+    color: white;
+    transition: all 0.1s;
+}
+
+.cancel{
+    background-color: #242424;
+    color: navajowhite;
+    border: 2px solid #cf0000;
+}
+
+.cancel:hover{
+    background-color: #cf0000;
+    color: white;
+    transition: all 0.1s;
+}
+
+input:focus{
+    outline: none;
+    background-color:  rgb(223, 223, 223);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.alert-danger {
+    background-color: rgb(253, 54, 54);
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    padding-top: 13px;
+    padding-left: 15px;
+}
